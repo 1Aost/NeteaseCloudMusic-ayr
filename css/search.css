@@ -1,0 +1,84 @@
+#suggest-list {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    z-index: 999;
+    width: 230px;
+    height: 287px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background-color: #fff;
+}
+.tit {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #666;
+}
+.tit:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.list {
+    border-top: 1px solid #ccc;
+}
+.left-list {
+    float: left;
+    width: 70px;
+    height: 256px;
+    border-right: 1px solid #ccc;
+}
+.left-list ul li {
+    padding-left: 7px;
+}
+.right-list ul li:hover {
+    background-color: #ddd;
+}
+.left-list ul li i {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+.hide {
+    padding: 3px;
+    margin: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hide:hover {
+    background-color: #ddd;
+}
+.r1,.r2,.r3 {
+    border-bottom: 1px solid #ccc;
+}
+.l1,.r1 {
+    height: 100px;
+}
+.l2,.r2 {
+    height: 35px;
+}
+.l3,.l4,.r3,.r4 {
+    height: 50px;
+}
+.l1 i {
+    background: url(../images/icon.png) -34px -299px;
+}
+.l2 i {
+    background: url(../images/icon.png) -49px -299px;
+}
+.l3 i {
+    background: url(../images/icon.png) -34px -319px;
+}
+.l4 i {
+    background: url(../images/icon.png) -49px -319px;
+}
+.right-list {
+    float: left;
+    height: 236px;
+    width: 158px;
+}

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="shortcut icon" href="./images/topbar.ico">
+    <script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./lib/jquery.js"></script>
+</head>
+<body>
+    <header id="tt" class="header">
+        <div class="logo">
+            <h1>
+                <a href="index.html">网易云音乐</a>
+            </h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="selected"><a href="javascript:;">发现音乐</a></li>
+                <li><a href="javascript:;">我的音乐</a></li>
+                <li><a href="javascript:;">关注</a></li>
+                <li><a href="javascript:;">商城</a></li>
+                <li><a href="javascript:;">音乐人</a></li>
+                <li class="brand"><a href="javascript:;">下载客户端</a>
+                    <i></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <span></span>
+            <input type="text" name="" id="bbh" value="音乐/视频/电台/用户">
+            <div id="suggest-list">
+                <a class="tit"></a>
+                <div class="list">
+                    <div class="left-list">
+                        <ul>
+                            <li class="l1"><i></i>单曲</li>
+                            <li class="l2"><i></i>歌手</li>
+                            <li class="l3"><i></i>专辑</li>
+                            <li class="l4"><i></i>歌单</li>
+                        </ul>
+                    </div>
+                    <div class="right-list">
+                        <li class="r1"></li>
+                        <li class="r2"></li>
+                        <li class="r3"></li>
+                        <li class="r4"></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>创作者中心</button>
+        <a href="javascript:;">登录</a>
+    </header>
+    <div class="sub-nav">
+        <i></i>
+        <ul>
+            <li class="checked">推荐</li>
+            <li>排行榜</li>
+            <li class="r">
+                歌单
+            </li>
+            <li>主播电台</li>
+            <li>歌手</li>
+            <li>新碟上架</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="arrow-l"></div>
+        <div class="arrow-r"></div>
+        <div class="cont">
+            <div class="focus">
+                <ul>
+                    <li class="active"><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                    <li><a href="###"><img src="" alt=""></a></li>
+                </ul>
+                <ol class="circle"></ol>
+           </div>
+        </div>
+         <div class="download">
+             <img src="./images/download.jpg" alt="">
+             <a href="javascript:;"></a>
+         </div>
+     </div>
+    <div class="fu">
+        <div class="hexin">
+            <div class="hexin-left">
+                <!-- 热门推荐 -->
+                <div class="commend">
+                    <div class="commend-top">
+                        <a href="javascript:;" class="tuijian">热门推荐
+                            <i></i>
+                        </a>
+                        <a href="javascript:;" class="more">更多 </a>
+                        <ul>
+                            <li><a href="###">华语</a></li>
+                            <i></i>
+                            <li><a href="###">流行</a></li>
+                            <i></i>
+                            <li><a href="###">摇滚</a></li>
+                            <i></i>
+                            <li><a href="###">民谣</a></li>
+                            <i></i>
+                            <li><a href="###">电子</a></li>
+                        </ul>
+                    </div>
+                    <div class="commend-main">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>1183万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>1395万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>919万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>1951</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"> 
+                                    <i></i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>2431万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>10万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"> 
+                                    <i></i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>1578万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <span></span>
+                                    <span>29万</span>
+                                    <a href="javascript:;" title="播放"></a>
+                                </div>
+                                <a href="###"><img src="" alt=""></a>
+                                <a href="javascript:;" title="" class="msk"></a>
+                                <a href="###" title="" class="retext">
+                                    <i></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 新碟上架 -->
+                <div class="new">
+                    <div class="new-top">
+                        <a href="###">新碟上架<i></i></a>
+                        <a href="###" class="more">更多 </a>
+                    </div>
+                    <div class="new-main">
+                        <button class="b1"></button>
+                        <ul>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###" title="" class="cover">
+                                    <img src="" alt="">
+                                    <p class="title"></p>
+                                </a>
+                                <a href="javascript:;" class="co"></a>
+                                <a href="javascript:;" class="cc" title="播放"></a>
+                                <a href="###" class="singer">
+                                    <p class="sing"></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="b2"></button>
+                    </div>
+                </div>
+                <!-- 榜单 -->
+                <div class="bang">
+                    <div class="bang-top">
+                        <a href="###">榜单<i></i></a>
+                        <a href="###" class="more">更多 </a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr class="first">
+                                <td>
+                                    <img src="" alt="" class="bsimg">
+                                    <a href="javascript:;" title="飙升榜" class="msk"></a>
+                                    <a href="###"><h3>飙升榜</h3></a>
+                                    <a href="javascript:;"></a>
+                                    <a href="javascript:;"></a>
+                                </td>
+                                <td>
+                                    <img src="" alt="" class="xgimg">     
+                                    <a href="javascript:;" title="新歌榜" class="msk"></a>                 
+                                    <a href="###"><h3>新歌榜</h3></a>
+                                    <a href="javascript:;"></a>
+                                    <a href="javascript:;"></a>
+                                </td>
+                                <td>
+                                    <img src="" alt="" class="ycimg">
+                                    <a href="javascript:;" title="原创榜" class="msk"></a>
+                                    <a href="###"><h3>原创榜</h3></a>
+                                    <a href="javascript:;"></a>
+                                    <a href="javascript:;"></a>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ff">
+                                <td>
+                                    <i>1</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>1</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>1</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ff">
+                                <td>
+                                    <i>2</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>2</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>2</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ff">
+                                <td>
+                                    <i>3</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>3</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>3</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>4</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>4</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>4</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>5</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>5</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>5</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>6</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>6</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>6</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>7</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>7</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>7</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>8</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>8</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>8</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>9</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>9</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>9</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="dd">
+                                <td>
+                                    <i>10</i><a href="javascript:;" class="bs" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>10</i><a href="javascript:;" class="xg" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i>10</i><a href="javascript:;" class="yc" title=""></a>
+                                    <div class="oper">
+                                        <a href="javascript:;" class="i1" title="播放"></a>
+                                        <a href="javascript:;" class="i2" title="添加到播放列表"></a>
+                                        <a href="javascript:;" class="i3" title="收藏"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:;">查看全部&gt;</a></td>
+                                <td><a href="javascript:;">查看全部&gt;</a></td>
+                                <td><a href="javascript:;">查看全部&gt;</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="hexin-right">
+                <div class="login">
+                    <p class="login-note">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                    <a href="###">用户登录</a>
+                </div>
+                <div class="vocal">
+                    <div class="vocal-top">
+                        <h5>入驻歌手</h5>
+                        <a href="###">查看全部&gt;</a>
+                    </div>
+                    <div class="vocal-main">
+                        <ul>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/s1.jpg" alt="">
+                                    <div class="info">
+                                        <h4>张惠妹aMEI</h4>
+                                        <p>台湾歌手张惠妹</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/s2.jpg" alt="">
+                                    <div class="info">
+                                        <h4>吴莫愁Momo</h4>
+                                        <p>《中国好声音》选手吴莫愁</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/s3.jpg" alt="">
+                                    <div class="info">
+                                        <h4>孙楠</h4>
+                                        <p>歌手孙楠 代表作《你快回来》《燃烧》</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/s4.jpg" alt="">
+                                    <div class="info">
+                                        <h4>麦田老狼</h4>
+                                        <p>歌手，音乐人。代表作《同桌的你》等。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/s5.jpg" alt="">
+                                    <div class="info">
+                                        <h4>陈楚生</h4>
+                                        <p>唱作歌手</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="###">申请成为网易音乐人</a>
+                    </div>
+                </div>
+                <div class="zhubo">
+                    <div class="zhubo-top">
+                        <h5>热门主播</h5>
+                    </div>
+                    <div class="zhubo-main">
+                        <ul>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/z1.jpg" alt="">
+                                    <div class="info">
+                                        <a>陈立</a>
+                                        <p>心理学家、美食家陈立教授</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/z2.jpg" alt="">
+                                    <div class="info">
+                                        <a>刘维-Julius</a>
+                                        <p>歌手、播客节目《维维道来》主理人</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/z3.jpg" alt="">
+                                    <div class="info">
+                                        <a>莫非定律MoreFeel</a>
+                                        <p>男女双人全创作独立乐团</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/z4.jpg" alt="">
+                                    <div class="info">
+                                        <a>碎嘴许美达</a>
+                                        <p>脱口秀网络红人</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="./uploads/z5.jpg" alt="">
+                                    <div class="info">
+                                        <a>银临Rachel</a>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="fu">
+            <div class="footer-left">
+                <ul>
+                    <li><a href="###">服务条款</a></li>
+                    <i></i>
+                    <li><a href="###">隐私政策</a></li>
+                    <i></i>
+                    <li><a href="###">儿童隐私政策</a></li>
+                    <i></i>
+                    <li><a href="###">版权投诉</a></li>
+                    <i></i>
+                    <li><a href="###">投资者关系</a></li>
+                    <i></i>
+                    <li><a href="###">广告合作</a></li>
+                    <i></i>
+                    <li><a href="###">廉正举报</a></li>
+                    <i></i>
+                    <li><a href="###">联系我们</a></li>
+                </ul>
+                <div class="content">
+                    <p>网易公司版权所有©1997-2022&nbsp;&nbsp;&nbsp;&nbsp;杭州乐读科技有限公司运营：</p>
+                    <a href="###">浙网文[2021] 1186-054号</a>
+                </div>
+                <a href="###">粤B2-20090191-18 工业和信息化部备案管理系统网站</a>
+                <a href="###"><img src="./images/police.png"> 浙公网安备 33010902002564号</a>
+                <p>互联网宗教信息服务许可证：浙（2022）0000120</p>
+            </div>
+            <div class="footer-right">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="###"><img src="./images/foot1.jpg" alt=""></a>
+                                <img src="./images/tt1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="###"><img src="./images/foot2.jpg" alt=""></a>
+                                <img src="./images/tt2.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="###"><img src="./images/foot3.jpg" alt=""></a>
+                                <img src="./images/tt3.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="###"><img src="./images/foot4.jpg" alt=""></a>
+                                <img src="./images/tt4.jpg" alt="">
+                            </div>                            
+                        </li>
+                        <li>
+                            <div>
+                               <a href="###"><img src="./images/foot5.jpg" alt=""></a>
+                                <img src="./images/tt5.jpg" alt=""> 
+                            </div>                           
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <a href='#tt' class="another" title="回到顶部"></a>
+    <!-- 底部播放器 -->
+    <div class="playerBar">
+        <div class="fu">
+            <div class="play-left">
+                <a href="javascript:;" class="prv" title="上一首(ctrl+←)">上一首</a>
+                <a href="javascript:;" class="ply" title="播放/暂停(p)">播放/暂停</a>
+                <a href="javascript:;" class="nxt" title="下一首(ctrl+→)">下一首</a>
+            </div>
+            <div class="play-center">
+                <a href="javascript:;" class="play-cl">
+                    <img src="./uploads/btn.jpg" alt="">
+                </a>
+                <div class="play-cr">
+                    <div class="words">
+                        <a href="javascript:;" title="Amarillo By Morning" class="fc1 f-thide fl">Amarillo By Morning</a>
+                        <a href="javascript:;" title="MV" class="mv fl"></a>
+                        <a href="javascript:;" title="The Country Dance Kings" class="fc2 f-thide fl">The Country Dance Kings</a>
+                        <a href="javascript:;" class="src fl" title="来自歌单"></a>
+                    </div>
+                    <div class="bar fl">
+                        <div class="barbg">
+                            <div class="rdy fl" style="width:0"></div>
+                            <div class="cur" style="width:0">
+                                <span class="btn f-tdn f-alpha">
+                                    <i></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="time">
+                            <em>00:00</em>
+                            / 00:00
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="opear fl">
+                <a href="javascript:;" title="画中画歌词" class="icn icn-pip">画中画歌词</a>
+                <a href="javascript:;" title="收藏" class="icn icn-add">收藏</a>
+                <a href="javascript:;" title="分享" class="icn icn-share">分享</a>
+            </div>
+            <div class="ctrl fl">
+                <div class="m-vol" style="visibility:hidden">
+                    <div class="barbg"></div>
+                    <div class="vbg">
+                        <div class="curr" style="height:74.4px"></div>
+                        <span class="btn" style="top: 16.2px"></span>
+                    </div>
+                </div>
+                <a href="javascript:;" class="icn icn-vol"></a>
+                <a href="javascript:;" class="icn icn-loop" title="循环"></a>
+                <span class="add">
+                    <span class="tip" style="display:none">已添加到播放列表</span>
+                    <a href="javascript:;" title="播放列表" class="icn icn-list">5</a>
+                </span>
+            </div>
+        </div>
+        <div class="playbtn">
+            <a href="javascript:;" class="s-btn"></a>
+        </div>
+    </div>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
